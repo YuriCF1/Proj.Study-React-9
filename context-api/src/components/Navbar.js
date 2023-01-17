@@ -21,6 +21,7 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink to="/about">Sobre</NavLink>
+      <NavLink to="/products">Products</NavLink>
       {/* Redirecionamento fazendo reload  da página */}
       {/* <a href=""></a> */}
     </nav>
