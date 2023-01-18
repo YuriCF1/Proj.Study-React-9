@@ -11,7 +11,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ccc;
+    color: rgb(81, 81, 81);
 }
 
 .active { /*Ativado quando uma página estiver ativa*/
