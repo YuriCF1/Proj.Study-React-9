@@ -7,6 +7,7 @@ export const titleColorReducer = (state, action) => {
 };
 
 export const TitleColorContextProvider = ({ children }) => {
+    // State = Estado inicial definido "color: 'purple'" | dispatch = função que faz a mudança do valor | {color: "purple" = estado inicial}
   const [state, dispatch] = useReducer(titleColorReducer, { color: "purple" });
 
   console.log("Title color context", state);
