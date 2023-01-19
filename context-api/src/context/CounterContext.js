@@ -10,10 +10,9 @@ export const CounterContextProvider = ({ children }) => {
 
   return (
     <CounterContext.Provider
-      value={{ counter, setCounter }}
+      value={{ counter, setCounter }} // Enviando os valores que serão lidos e os de gerenciamento
     >
-        {children}
-
+      {children}
     </CounterContext.Provider>
   );
 };
