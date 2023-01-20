@@ -5,14 +5,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { CounterContextProvider } from "./context/CounterContext";
+import { TitleColorContextProvider } from "./context/TitleColorContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* 2 - Criando Provider */}
     {/* Importa a função que tem a createContext e seus valores para serem repassados como children */}
-    <CounterContextProvider> {/*Como ele tem o children, ele renderiza tudo que tem no App também*/}
-      <App />
+    <CounterContextProvider>
+      <TitleColorContextProvider>
+        {" "}
+        {/*Como ele tem o children, ele renderiza tudo que tem no App também*/}
+        <App />
+      </TitleColorContextProvider>
     </CounterContextProvider>
   </React.StrictMode>
 );
