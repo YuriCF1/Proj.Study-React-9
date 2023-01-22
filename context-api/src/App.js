@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1>Context API</h1>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
