@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1>Context API</h1>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}> {/*Tem que colocar esse basename para fazer deploy no git pages*/}
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
