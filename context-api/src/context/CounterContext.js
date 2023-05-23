@@ -1,5 +1,5 @@
 // 1 - Criando o contexto
-
+//Exemplo de: Contexto
 import { createContext, useState } from "react";
 
 export const CounterContext = createContext(); //A- Cria o nome do contesto 
